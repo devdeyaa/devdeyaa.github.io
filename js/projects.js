@@ -1,5 +1,209 @@
 const projectsData = [
   {
+    "id": "clinic-mas",
+    "title": "MAS Clinic: Dental & Skin Aesthetics Website",
+    "tag": "PROTOCOL_CLINIC_WEB",
+    "status": "LIVE_DEMO",
+    "icon": "fas fa-tooth",
+    "systemName": "MAS_Clinic_Site",
+    "uptime": "Cloudflare_Edge",
+    "liveUrl": "https://masclinic.devdeyaa.com",
+    "liveUrlLabel": "VIEW_LIVE_SITE",
+    "screenshot": "img/clinic_mas_1.jpg",
+    "screenshots": [
+      "img/clinic_mas_1.jpg",
+      "img/clinic_mas_2.jpg",
+      "img/clinic_mas_3.jpg",
+      "img/clinic_mas_4.jpg",
+      "img/clinic_mas_5.jpg"
+    ],
+    "features": [
+      "13 Treatment Pages, Arabic + English",
+      "3 Departments: Dental, Skin, Aesthetics",
+      "8 Before/After Cases + 14 Clinic Videos",
+      "3-Step Booking into WhatsApp"
+    ],
+    "description": "A bilingual website for MAS Clinic on Syria Street, Mohandessin: one center with dentistry, dermatology and aesthetics under one roof. Every treatment has its own page in Arabic and English, the clinic's own photos and videos carry the design, and a patient can pick a treatment, a time and send the request on WhatsApp in three steps.",
+    "challenge": "Three departments with different audiences had to live on one site without feeling like three sites, and a patient looking for veneers should never have to dig through laser and Botox pages to find them. The clinic also had a strong Google reputation (4.9 from 790 reviews) that nobody saw before calling.",
+    "solution": "I structured the site around the three departments, gave each of the 13 treatments its own page in both languages, and put the Google rating, hours and the phone number on the first screen. Before/after cases and the clinic's own reels sit next to the treatments they prove, and the booking flow ends in a prefilled WhatsApp message so the reception gets a ready request, not a 'hi'.",
+    "metric1": {
+      "label": "TREATMENT_PAGES",
+      "value": "13 x 2 langs"
+    },
+    "metric2": {
+      "label": "GOOGLE_RATING",
+      "value": "4.9 (790)"
+    },
+    "tech": [
+      {
+        "name": "Astro",
+        "type": "Static_Frontend"
+      },
+      {
+        "name": "Cloudflare",
+        "type": "Edge_Workers"
+      },
+      {
+        "name": "AR + EN",
+        "type": "RTL_Bilingual"
+      }
+    ],
+    "mermaid": "graph TD\n    Data[(Clinic Google Maps + Social Data)] --> Build[Astro Static Build]\n    Build --> Edge[Cloudflare Worker: own subdomain]\n    Edge --> Pages[Home + Treatment Pages AR/EN]\n    Pages --> Book[3-Step Booking]\n    Book --> WA[WhatsApp with Prefilled Request]\n    Edge --> Analytics[(D1 Visit Analytics)]"
+  },
+  {
+    "id": "clinic-miswak",
+    "title": "Miswak Dental Clinic: Cosmetic & Implant Website",
+    "tag": "PROTOCOL_CLINIC_WEB",
+    "status": "LIVE_DEMO",
+    "icon": "fas fa-tooth",
+    "systemName": "Miswak_Clinic_Site",
+    "uptime": "Cloudflare_Edge",
+    "liveUrl": "https://miswak.devdeyaa.com",
+    "liveUrlLabel": "VIEW_LIVE_SITE",
+    "screenshot": "img/clinic_miswak_1.jpg",
+    "screenshots": [
+      "img/clinic_miswak_1.jpg",
+      "img/clinic_miswak_2.jpg",
+      "img/clinic_miswak_3.jpg",
+      "img/clinic_miswak_4.jpg",
+      "img/clinic_miswak_5.jpg"
+    ],
+    "features": [
+      "Interactive Before/After Slider (8 Cases)",
+      "10 Treatment Pages, Arabic + English",
+      "Gold Logo Drawn Live on Load",
+      "Sticky Mobile Booking Bar"
+    ],
+    "description": "A dark, gold website for Miswak Dental Clinic on Shehab Street, Mohandessin, built around its own patients' results. The hero shows a real patient's smile, the clinic's single-line logo draws itself next to the name, and a before/after slider lets visitors drag between eight of the clinic's cases.",
+    "challenge": "Miswak is a new clinic (opened November 2024) with a perfect 5.0 from 106 Google reviews but almost no reach online: a small Instagram and a Facebook page. A new patient had no single place to see the work behind those reviews.",
+    "solution": "I made the results the first thing a visitor sees: real patient portraits from the clinic's shoot and an eight-case before/after viewer, each case linked to booking. The look comes from the clinic itself, the black reception wall and gold logo, and on phones a sticky bar keeps WhatsApp and call one thumb away.",
+    "metric1": {
+      "label": "BEFORE_AFTER_CASES",
+      "value": "8"
+    },
+    "metric2": {
+      "label": "GOOGLE_RATING",
+      "value": "5.0 (106)"
+    },
+    "tech": [
+      {
+        "name": "Astro",
+        "type": "Static_Frontend"
+      },
+      {
+        "name": "Cloudflare",
+        "type": "Edge_Workers"
+      },
+      {
+        "name": "AR + EN",
+        "type": "RTL_Bilingual"
+      }
+    ],
+    "mermaid": "graph TD\n    Data[(Clinic Google Maps + Social Data)] --> Build[Astro Static Build]\n    Build --> Edge[Cloudflare Worker: own subdomain]\n    Edge --> Pages[Home + Treatment Pages AR/EN]\n    Pages --> Book[3-Step Booking]\n    Book --> WA[WhatsApp with Prefilled Request]\n    Edge --> Analytics[(D1 Visit Analytics)]"
+  },
+  {
+    "id": "clinic-karim",
+    "title": "Prof. Karim Fawzy: Periodontology Clinic Website",
+    "tag": "PROTOCOL_CLINIC_WEB",
+    "status": "LIVE_DEMO",
+    "icon": "fas fa-user-doctor",
+    "systemName": "Karim_Fawzy_Clinic_Site",
+    "uptime": "Cloudflare_Edge",
+    "liveUrl": "https://drkarimfawzy.devdeyaa.com",
+    "liveUrlLabel": "VIEW_LIVE_SITE",
+    "screenshot": "img/clinic_karim_1.jpg",
+    "screenshots": [
+      "img/clinic_karim_1.jpg",
+      "img/clinic_karim_2.jpg",
+      "img/clinic_karim_3.jpg",
+      "img/clinic_karim_4.jpg",
+      "img/clinic_karim_5.jpg"
+    ],
+    "features": [
+      "Doctor-Led Story: 'Treat Before We Extract'",
+      "Credentials: Cairo + Kiel (Germany)",
+      "8 Treatment Pages, Arabic + English",
+      "Patient Stories in Their Own Words"
+    ],
+    "description": "A website for Prof. Karim Fawzy's clinic in Degla, Maadi, a professor of oral medicine and periodontology in Egypt and Germany. The site leads with his approach, saving the tooth by treating the gums before anyone talks about extraction, and backs it with his academic record and patients' own words.",
+    "challenge": "Patients usually arrive already told by someone else that a tooth has to come out. The site had to explain, in plain Arabic, why a periodontist treats first, and show credentials strong enough (Cairo, Kiel, a state award) to make a patient want a second opinion.",
+    "solution": "I wrote the home page as an argument: the headline 'we treat before we think of extracting', then the credentials, the clinic, and a patient who kept her teeth. Gum treatments lead the eight treatment pages, every page is in Arabic and English for his international patients, and booking takes three steps into WhatsApp.",
+    "metric1": {
+      "label": "TREATMENT_PAGES",
+      "value": "8 x 2 langs"
+    },
+    "metric2": {
+      "label": "GOOGLE_RATING",
+      "value": "5.0 (330)"
+    },
+    "tech": [
+      {
+        "name": "Astro",
+        "type": "Static_Frontend"
+      },
+      {
+        "name": "Cloudflare",
+        "type": "Edge_Workers"
+      },
+      {
+        "name": "AR + EN",
+        "type": "RTL_Bilingual"
+      }
+    ],
+    "mermaid": "graph TD\n    Data[(Clinic Google Maps + Social Data)] --> Build[Astro Static Build]\n    Build --> Edge[Cloudflare Worker: own subdomain]\n    Edge --> Pages[Home + Treatment Pages AR/EN]\n    Pages --> Book[3-Step Booking]\n    Book --> WA[WhatsApp with Prefilled Request]\n    Edge --> Analytics[(D1 Visit Analytics)]"
+  },
+  {
+    "id": "clinic-osman",
+    "title": "Dr. Osman Dental Clinic: Since 1971 Website",
+    "tag": "PROTOCOL_CLINIC_WEB",
+    "status": "LIVE_DEMO",
+    "icon": "fas fa-landmark",
+    "systemName": "Osman_Clinic_Site",
+    "uptime": "Cloudflare_Edge",
+    "liveUrl": "https://drosman.devdeyaa.com",
+    "liveUrlLabel": "VIEW_LIVE_SITE",
+    "screenshot": "img/clinic_osman_1.jpg",
+    "screenshots": [
+      "img/clinic_osman_1.jpg",
+      "img/clinic_osman_2.jpg",
+      "img/clinic_osman_3.jpg",
+      "img/clinic_osman_4.jpg",
+      "img/clinic_osman_5.jpg"
+    ],
+    "features": [
+      "55-Year Timeline: 1971 to Today",
+      "Prosthodontics + Implants Focus",
+      "6 Treatment Pages, Arabic + English",
+      "Mobile Call / WhatsApp / Book Bar"
+    ],
+    "description": "A website for Dr. Osman Dental Clinic in Dokki, founded in 1971 and run today by Prof. Ahmed Osman, professor of prosthodontics. Its old site had gone dark and its Facebook page still pointed to it; the new one tells the clinic's story from 1971 and puts implants and prosthodontics first.",
+    "challenge": "A clinic with 55 years of history, 418 five-star Google reviews and a professor at its head had no working website: osmanhc.com showed a hosting placeholder, so every link from its own pages led nowhere.",
+    "solution": "I rebuilt its presence around the record: a timeline from Prof. Mahmoud Osman opening the clinic in 1971 to his son leading it today, the teaching and fellowships behind it, then the six treatments with implants and prosthodontics first. On phones a fixed bar gives call, WhatsApp and booking in one tap.",
+    "metric1": {
+      "label": "YEARS_OPEN",
+      "value": "55 (since 1971)"
+    },
+    "metric2": {
+      "label": "GOOGLE_RATING",
+      "value": "5.0 (418)"
+    },
+    "tech": [
+      {
+        "name": "Astro",
+        "type": "Static_Frontend"
+      },
+      {
+        "name": "Cloudflare",
+        "type": "Edge_Workers"
+      },
+      {
+        "name": "AR + EN",
+        "type": "RTL_Bilingual"
+      }
+    ],
+    "mermaid": "graph TD\n    Data[(Clinic Google Maps + Social Data)] --> Build[Astro Static Build]\n    Build --> Edge[Cloudflare Worker: own subdomain]\n    Edge --> Pages[Home + Treatment Pages AR/EN]\n    Pages --> Book[3-Step Booking]\n    Book --> WA[WhatsApp with Prefilled Request]\n    Edge --> Analytics[(D1 Visit Analytics)]"
+  },
+  {
     id: "haas",
     title: "HAAS: Japanese & Asian Ingredients Store",
     tag: "PROTOCOL_ECOM_B2B_B2C",
